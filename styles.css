@@ -1,4 +1,4 @@
-/* Reset CSS básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,8 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -91,5 +93,10 @@ header {
     display: none;
     color: green;
     font-weight: bold;
+}
+.logo {
+    display: block; 
+    margin: -45px auto 10px; 
+    max-width: 75px; 
 }
 
