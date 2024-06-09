@@ -1,42 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Principal</title> 
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Screen</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 800px; /* Adjust width as needed */
+      height: 600px; /* Adjust height as needed */
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 90px;
+      height: 60px;
+      fill: #007bff; /* Example color */
+    }
+
+    .search-bar {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      width: 70%;
+      margin-left: -5%;
+    }
+
+    .search-icon {
+      margin-right: 10px;
+    }
+
+    .content-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px; /* adjust the height as needed */
+      overflow: hidden;
+    }
+
+    .content-section img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .content-image {
+      width: 50px;
+      height: 50px;
+      fill: #000; /* Example color */
+      margin: 0 auto;
+      display: block;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px;
+      background-color: #f5f5f5;
+    }
+
+    .footer-icon {
+      width: 25px;
+      height: 25px;
+      fill: #000; /* Example color */
+    }
+
+    .footer-text {
+      font-size: 12px;
+      color: #555;
+    }
+
+  </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Logotipo"> <!-- Certifique-se de que o caminho do arquivo esteja correto -->
-            <span>Cloud9</span>
+    <div class="container">
+      <div class="header">
+        <img class="logo" src="logo.png" alt="Logo">
+        <input type="text" class="search-bar" placeholder="Search">
+        <i class="search-icon">🔍</i>
+      </div>
+      <div class="content">
+        <div class="content-section">
+          <img src="tckc9.jpg" alt="tckc9">
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
+        <div class="content-section">
+          <svg class="content-image" viewBox="0 0 50 50">
+            <path d="M25,15 L20,25 L30,25 Z" />
+            <circle cx="25" cy="15" r="5" />
+          </svg>
         </div>
-        <div class="icons">
-            <div class="dropdown">
-                <i class="user-icon">👤</i>
-                <div class="dropdown-content">
-                    <a href="#">Atualização de senha</a>
-                    <a href="#">Sair do sistema</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <i class="settings-icon">⚙️</i>
-                <div class="dropdown-content">
-                    <a href="#">Aumento de fonte</a>
-                    <a href="#">Contraste de cores</a>
-                </div>
-            </div>
+      </div>
+      <div class="footer">
+        <div class="footer-item">
+          <svg class="footer-icon" viewBox="0 0 25 25">
+            <path d="M12.5,10 L12.5,20 L17.5,20 L17.5,15 L22.5,15 L22.5,10 Z" />
+            <circle cx="12.5" cy="10" r="2.5" />
+          </svg>
+          <div class="footer-text">Configurações</div>
         </div>
+        <div class="footer-item">
+          <svg class="footer-icon" viewBox="0 0 25 25">
+            <path d="M12.5,10 L12.5,15 L17.5,15 L17.5,10 Z" />
+          </svg>
+          <div class="footer-text">Home</div>
+        </div>
+        <div class="footer-item">
+          <svg class="footer-icon" viewBox="0 0 25 25">
+            <path d="M12.5,10 C12.5,5 17.5,5 17.5,10 C17.5,10 22.5,10 22.5,5 L22.5,15 Z" />
+          </svg>
+          <div class="footer-text">Settings</div>
+        </div>
+      </div>
     </div>
-    <div class="content">
-        <div class="news">
-            <h3>Notícias/Propagandas</h3>
-            <p>Conteúdo relevante aqui...</p>
-        </div>
-    </div>
-</body>
-</html>
+  </body>
