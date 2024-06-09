@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745;
+}
+
+header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.user-icon,
+.config-icon {
+    cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+}
+
+.news {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.confirmation-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+.logo {
+    display: block; 
+    margin: -45px auto 10px; 
+    max-width: 75px; 
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.search-box-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
