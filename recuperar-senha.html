@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="passwordRecoveryForm" action="#" method="post">
+            <img src="logo.png" alt="Logotipo da sua empresa" class="logo">
+            <h2>Recuperar Senha</h2>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="confirmationMessage" class="confirmation-message">Um e-mail foi enviado com instruções para redefinir a senha.</p>
+    </div>
+    <script>
+        document.getElementById('passwordRecoveryForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            
+            document.getElementById('confirmationMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
