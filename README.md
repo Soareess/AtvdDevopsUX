@@ -7,4 +7,3 @@ git commit -m "teste"
 git push
 git merge main
 git push origin Vinicius_Marin
-.

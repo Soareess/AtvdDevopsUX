@@ -4,9 +4,3 @@ document.getElementById('passwordRecoveryForm').addEventListener('submit', funct
 
     document.getElementById('recoveryConfirmationMessage').style.display = 'block';
 });
-document.getElementById('userRegistrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
-    
-    document.getElementById('confirmationMessage').style.display = 'block';
-});
